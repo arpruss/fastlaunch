@@ -216,7 +216,7 @@ public class Popup extends Activity {
 				tv.setText(e.label);
 				File iconFile = Apps.getIconFile(Popup.this, e.component);
 				ImageView img = (ImageView)v.findViewById(R.id.icon);
-				img.setVisibility(View.INVISIBLE);
+				img.setVisibility(View.GONE);
 				if (!iconFile.exists())
 					Apps.saveIcon(Popup.this, e.component);
 				if (iconFile.exists()) {
@@ -306,7 +306,12 @@ class Entry {
 	public static final Comparator<Entry> entryComparator = 
 	new Comparator<Entry>() {
 	public int compare(Entry a, Entry b) {
-		return a.label.compareToIgnoreCase(b.label);
+		if (a.component.startsWith(" ") && !b.component.startsWith(" "))
+			return -1;
+		else if (!a.component.startsWith(" ") && b.component.startsWith(" "))
+			return 1;
+		else 
+			return a.label.compareToIgnoreCase(b.label);
 	}
 	};
 
