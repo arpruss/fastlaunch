@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+    	android:title="Slow double press mode"
+    	android:summary="Allow more time for double press detection--good for slower devices" 
+    	android:defaultValue="false"
+    	android:key="slow"/>
+    <CheckBoxPreference
+    	android:title="Auto WiFi"
+    	android:summary="Turn off WiFi after device is turned off, and then turn it back on" 
+    	android:defaultValue="false"
+    	android:key="autoWiFi"/>
+</PreferenceScreen>
