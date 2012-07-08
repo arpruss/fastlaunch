@@ -1,4 +1,4 @@
-Copyright (c) 2011, Alexander R. Pruss
+Copyright (c) 2011-12, Alexander R. Pruss
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
