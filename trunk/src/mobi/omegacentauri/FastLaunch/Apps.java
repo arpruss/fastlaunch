@@ -152,9 +152,9 @@ public class Apps extends Activity {
     	case R.id.clear:
     		clear();
     		return true;
-    	case R.id.options:
-    		startActivity(new Intent(this, Options.class));
-    		return true;
+//    	case R.id.options:
+//    		startActivity(new Intent(this, Options.class));
+//    		return true;
     	default:
     		return false;
     	}
