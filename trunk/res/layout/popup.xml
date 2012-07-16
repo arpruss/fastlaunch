@@ -13,19 +13,33 @@
         android:layout_weight="1"
         android:scrollbars="vertical" >
     </ListView>
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="1px"
+        android:layout_height="fill_parent" 
+        android:background="#FF404040"/>
     <ListView
         android:id="@+id/apps2"
         android:layout_width="0dip"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:scrollbars="vertical" >
-    </ListView>
+        android:scrollbars="vertical" />
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="1px"
+        android:layout_height="fill_parent" 
+        android:background="#FF404040"/>
         <ListView
         android:id="@+id/apps3"
         android:layout_width="0dip"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:scrollbars="vertical" />
+       <View
+        android:id="@+id/divider3"
+        android:layout_width="1px"
+        android:layout_height="fill_parent" 
+        android:background="#FF404040"/>
         <ListView
         android:id="@+id/apps4"
         android:layout_width="0dip"
