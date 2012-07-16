@@ -97,7 +97,7 @@ public class MyApplicationInfo {
 			label = component;
 		}
 		else {			
-			label = (String)l;
+			label = l.toString();
 			if (label.equals("Angry Birds")) {
 				if(packageName.startsWith("com.rovio.angrybirdsrio")) {
 					label = label + " Rio";

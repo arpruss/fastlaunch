@@ -2,16 +2,35 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/main"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="fill_parent" 
-    android:layout_height="wrap_content"
+    android:layout_height="fill_parent"
     >
-<!-- fill_parent" -->
-<!-- wrap_content" -->
-    
-<ListView android:scrollbars="vertical" 
-android:id="@+id/apps" 
-android:layout_width="fill_parent"
-android:layout_height="wrap_content"
-/>
+    <ListView
+        android:id="@+id/apps1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical" >
+    </ListView>
+    <ListView
+        android:id="@+id/apps2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical" >
+    </ListView>
+        <ListView
+        android:id="@+id/apps3"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+        <ListView
+        android:id="@+id/apps4"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+        
 </LinearLayout>

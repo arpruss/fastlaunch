@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      android:versionCode="3"
-      android:versionName="1.00" package="mobi.omegacentauri.FastLaunch"
+      android:versionCode="4"
+      android:versionName="1.00.1" package="mobi.omegacentauri.FastLaunch"
       >
+
+    <!--   			  android:configChanges="keyboard|keyboardHidden|orientation" -->
 
     <application android:label="@string/app_name" android:icon="@drawable/icon">
         <activity android:name="mobi.omegacentauri.FastLaunch.Popup"
-      			  android:configChanges="keyboard|keyboardHidden|orientation"
-                  android:label="@string/app_name"
-                  android:theme="@android:style/Theme.Dialog">
+            android:theme="@android:style/Theme.Dialog"
+                  android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH_LONG_PRESS" />
                 <category android:name="android.intent.category.DEFAULT" /> 
             </intent-filter>
         </activity>
-<!-- 		<activity android:name=".Options" android:label="Options" />  -->
+ 		<activity android:name=".Options" android:label="Options" />  
         <activity android:name="mobi.omegacentauri.FastLaunch.Apps"
       			  android:configChanges="keyboard|keyboardHidden|orientation"
                   android:launchMode="singleTask"
