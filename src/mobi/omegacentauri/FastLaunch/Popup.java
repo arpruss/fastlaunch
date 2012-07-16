@@ -68,6 +68,7 @@ public class Popup extends Activity {
 	private LinearLayout main;
 	boolean tile;
 	static final int[] listIds = { R.id.apps1, R.id.apps2, R.id.apps3, R.id.apps4 };
+	static final int[] dividerIds = { R.id.divider1, R.id.divider2, R.id.divider3 };  
 
 	ViewTreeObserver.OnGlobalLayoutListener layoutListener = new OnGlobalLayoutListener(){
 
@@ -248,7 +249,7 @@ public class Popup extends Activity {
 	    	}
     		
 	    	final Context context = this;
-	    	final int textWidth = (int)(cellWidth -
+	    	final int textWidth = (int)(cellWidth - 1 -
 			getResources().getDisplayMetrics().density * (48+4)
 			- getResources().getDisplayMetrics().scaledDensity * 8);
 	    	
@@ -317,6 +318,10 @@ public class Popup extends Activity {
 				}
 			});
 			
+    	}
+    	
+    	for (int listNum = numLists - 1 ; listNum < dividerIds.length ; listNum++) {
+    		(findViewById(dividerIds[listNum])).setVisibility(View.GONE);
     	}
     	
     	for (int listNum = numLists ; listNum < appsLists.length ; listNum++) {
