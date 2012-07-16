@@ -9,8 +9,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 
 public class Options extends PreferenceActivity {
-	public final static String PREF_AUTO_WIFI = "autoWiFi";
-	public final static String PREF_SLOW = "slow";
+	public final static String PREF_TILE = "tile";
 	
 	@Override
 	public void onCreate(Bundle icicle) {
@@ -27,6 +26,5 @@ public class Options extends PreferenceActivity {
 	@Override
 	public void onStop() {
 		super.onStop();
-		Apps.startServiceIfNeeded(this);
 	}
 }
