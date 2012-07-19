@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      android:versionCode="4"
+      android:versionCode="5"
       android:versionName="1.00.1" package="mobi.omegacentauri.FastLaunch"
       >
 
@@ -32,4 +32,7 @@
      <uses-permission android:name="android.permission.BLUETOOTH"/>
      <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
 	<uses-permission android:name="android.permission.WRITE_SETTINGS"/> 
+        <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+        <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+        
 </manifest>
