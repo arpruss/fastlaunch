@@ -415,6 +415,28 @@ public class Popup extends Activity {
 			c.startActivity(i);
 		}
 	}
+
+
+    @Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.popup, menu);
+	    return true;
+	}
+
+	@Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	switch(item.getItemId()) {
+    	case R.id.options:
+    		startActivity(new Intent(this, Options.class));
+    		return true;
+    	case R.id.edit:
+    		startActivity(new Intent(this, Apps.class));
+    		return true;
+    	default:
+    		return false;
+    	}
+    }
+
 }
 
 class Entry {
@@ -425,6 +447,8 @@ class Entry {
 		this.component = component;
 		this.label = label;
 	}
+
+
 }
 
 class EntryComparator implements Comparator<Entry> {
